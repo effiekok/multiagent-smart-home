@@ -271,5 +271,5 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 ## 👤 Author
 
 **Your Name**
-- GitHub: [effiekok](https://github.com/YOUR_USERNAME)
+- GitHub: [effiekok](https://github.com/effiekok)
 - LinkedIn: [Ευθυμία Κοκκίνη](https://www.linkedin.com/in/%CE%B5%CF%85%CE%B8%CF%85%CE%BC%CE%AF%CE%B1-%CE%BA%CE%BF%CE%BA%CE%BA%CE%AF%CE%BD%CE%B7-aa550a401/)
