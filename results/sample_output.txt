@@ -1,0 +1,64 @@
+--- SYSTEM START ---
+>>> STARTING EPISODE: 1 (System Reset ID: 1)
+[agent1] >>> DETECTED INITIAL EPISODE 1 <<<
+[agent2] >>> DETECTED INITIAL EPISODE 1 <<<
+[agent1] I WIN table
+[agent2] I WIN door
+[agent1] Optimized Path: Table is closer. Doing Table -> Chair.
+[agent1] Got brush
+[agent1] Got color
+[agent1] FINISHED table
+[agent1] >>> CHAINING: Keeping tools for chair <<<
+[agent1] FINISHED chair
+[agent1] Dropped brush
+[agent1] Dropped color
+[agent2] Got key
+[agent2] Got code
+[agent2] FINISHED DOOR.
+[agent1] DONE.
+[agent2] DONE.
+   -> Ep 1 Finished. Utility: 2.41 | Steps: 19
+
+>>> STARTING EPISODE: 2 (System Reset ID: 2)
+[agent1] >>> NEW EPISODE 2 DETECTED. RESETTING... <<<
+[agent2] >>> NEW EPISODE 2 DETECTED. RESETTING... <<<
+[agent1] Optimized Path: Chair is closer. Doing Chair -> Table.
+[agent1] I WIN chair
+[agent2] I WIN door
+[agent1] Got brush
+[agent1] Got color
+[agent1] FINISHED chair
+[agent1] >>> CHAINING: Keeping tools for table <<<
+[agent1] FINISHED table
+[agent1] Dropped brush
+[agent1] Dropped color
+[agent2] Got key
+[agent2] Got code
+[agent2] FINISHED DOOR.
+   -> Ep 2 Finished. Utility: 2.38 | Steps: 21
+
+>>> STARTING EPISODE: 3 (System Reset ID: 3)
+...
+[NOTE: Episodes 3-99 omitted for brevity. Pattern is similar with varying step counts
+       depending on random target placement. Occasional deadlock retries appear as:]
+
+!!! DEADLOCK (Stalling / No Progress)! RETRYING EPISODE 47 !!!
+>>> STARTING EPISODE: 47 (System Reset ID: 93)
+...
+
+>>> STARTING EPISODE: 100 (System Reset ID: 197)
+[agent1] I WIN table
+[agent2] I WIN door
+[agent1] Got brush
+[agent1] Got color
+[agent1] FINISHED table
+[agent1] >>> CHAINING: Keeping tools for chair <<<
+[agent1] FINISHED chair
+[agent2] FINISHED DOOR.
+   -> Ep 100 Finished. Utility: 2.29 | Steps: 23
+
+------------------------------------------------
+DONE 100 EPISODES.
+FINAL AVERAGE UTILITY:  2.1847
+TOTAL ACTIONS TAKEN:    1923
+------------------------------------------------

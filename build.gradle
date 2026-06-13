@@ -1,0 +1,55 @@
+// =============================================
+//  build.gradle — Multi-Agent Smart Home System
+//  JaCaMo / Gradle Build File
+// =============================================
+
+plugins {
+    id 'java'
+}
+
+// JaCaMo Gradle plugin — bootstraps the entire framework
+apply plugin: 'jacamo'
+
+// ---- Repository for JaCaMo ----
+repositories {
+    maven { url "https://raw.githubusercontent.com/jacamo-lang/mvn-repo/master" }
+    maven { url "https://repo.maven.apache.org/maven2" }
+    mavenCentral()
+}
+
+// ---- JaCaMo Version ----
+jacamo_version = '0.9.2'
+
+dependencies {
+    implementation("org.jacamo:jacamo:${jacamo_version}")
+}
+
+// ---- Java Source Directories ----
+sourceSets {
+    main {
+        java {
+            srcDirs = ['java']
+        }
+    }
+}
+
+// ---- Run Task: launches the MAS project ----
+task run(type: JavaExec, dependsOn: 'classes') {
+    group       = "JaCaMo"
+    description = "Run the Smart Home Multi-Agent Simulation"
+
+    classpath   = sourceSets.main.runtimeClasspath
+    mainClass   = 'jacamo.infra.JaCaMoLauncher'
+    args        = ['smart_home_project.mas2j']
+
+    // Allow the Java Swing window to appear
+    jvmArgs     = ['-Djava.awt.headless=false']
+}
+
+// ---- Compiler Settings ----
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+compileJava.options.encoding = 'UTF-8'
