@@ -1,9 +1,9 @@
 //   SMART HOME AGENT
 //   DESCRIPTION: Agent that negotiates tasks, dynamically optimizes its path and collaborates to avoid collisions
 
-!start.
-
 current_ep(0).
+
+!start.
 
 // EPISODE MANAGEMENT
 +!start : episode_id(ID)

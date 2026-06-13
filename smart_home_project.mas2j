@@ -1,19 +1,14 @@
 // smart_home_project.mas2j
-//
-// The .mas2j defines:
-//  • the environment that will be loaded
-//  • the agents and which .asl they run
+
 MAS smart_home_project {
+
+    infrastructure: Centralised
 
     environment: example.SmartHomeEnv
 
-// Start of agent list
     agents:
-        // Agent 1 uses house_agent.asl
         agent1 house_agent;
-        // Agent 2 also uses house_agent.asl
         agent2 house_agent;
 
-// Declares the path where the asl files are located
     aslSourcePath: "src/agt";
 }
