@@ -100,8 +100,7 @@ multi-agent-smart-home/
 │       └── SmartHomeEnv.java      # Java environment: grid, actions, scoring, A*, view
 │
 ├── screenshots/
-│   ├── grid_running.png           # Live grid during simulation
-│   └── console_output.png         # Final statistics output
+│   └── smart_home_architecture_diagram.png
 │
 ├── results/
 │   └── sample_output.txt          # Example 100-episode run output
@@ -228,22 +227,6 @@ If Agent 2 wants to paint a chair and Agent 1 is already negotiating for the tab
 
 ---
 
-## 📸 Screenshots
-
-### Live Grid View
-> *(Add your screenshot here — `screenshots/grid_running.png`)*
-
-The grid shows:
-- **Red circle** = Agent 1
-- **Blue circle** = Agent 2
-- **Green cells** = Completed tasks
-- **Labels** = Tool and target positions
-
-### Console Output (100 Episodes)
-> *(Add your screenshot here — `screenshots/console_output.png`)*
-
----
-
 ## 📊 Results
 
 After 100 episodes with randomised target placement:
@@ -256,18 +239,6 @@ After 100 episodes with randomised target placement:
 | Episodes Completed Successfully | 100/100 |
 
 > Note: Results are stochastic due to random target placement. Values will vary between runs.
-
----
-
-## 🔮 Future Improvements
-
-- [ ] **Learning component** — Use Q-Learning or reinforcement learning to improve negotiation strategy over episodes
-- [ ] **More agents** — Extend to 3+ agents with a generalised negotiation protocol
-- [ ] **Larger grid** — Scale to 10×10 or configurable grid size
-- [ ] **More task types** — Add vacuuming, cooking, or other household tasks
-- [ ] **Communication delay simulation** — Add latency to the broadcast to model real distributed systems
-- [ ] **Statistics dashboard** — Replace console output with a live chart of utility over episodes
-- [ ] **JUnit tests** — Unit tests for A\* pathfinding and negotiation logic
 
 ---
 
@@ -300,7 +271,5 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/YOUR_PROFILE)
-
-> *Developed as a university project for the course: [Course Name], [University Name], [Year]*
+- GitHub: [EFFIE KOKKINI](https://github.com/YOUR_USERNAME)
+- LinkedIn: [Ευθυμία Κοκκίνη](https://www.linkedin.com/in/%CE%B5%CF%85%CE%B8%CF%85%CE%BC%CE%AF%CE%B1-%CE%BA%CE%BF%CE%BA%CE%BA%CE%AF%CE%BD%CE%B7-aa550a401/)
